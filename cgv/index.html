@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGV_sub1</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cgv_movie.css">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<!-- 로고+아이콘 영역 -->
+    <div class="w100"> 
+        <header id="header">
+            <div id="main_logo"><a href="logo"><img src="images/cgv_main-logo.png" alt="cgv메인로고 이미지"></a></div>
+            <ul id="main_icons">
+                <li>
+                    <a href="#login">
+                        <img src="images/header_login.png" alt="로그인 이미지">
+                        <span>로그인</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#membership">
+                        <img src="images/header_member.png" alt="회원가입 이미지">
+                        <span>회원가입</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mycgv">
+                        <img src="images/header_mycgv.png" alt="마이씨지비 이미지">
+                        <span>MY CGV</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#customer center">
+                        <img src="images/header_center.png" alt="고객센터 이미지">
+                        <span>고객센터</span>
+                    </a>
+                </li>
+            </ul>
+        </header>
+    </div>
+
+<!-- 내비영역 -->
+    <div id="nav_wrap" class="w100">
+        <nav id="nav">
+            <ul id="main_menu">
+                <li><a href="#영화">영화</a></li>
+                <li><a href="#극장">극장</a></li>
+                <li><a href="#예매">예매</a></li>
+                <li><a href="#스토어">스토어</a></li>
+                <li><a href="#이벤트">이벤트</a></li>
+            </ul>
+
+            <div id="drop_menu">
+                <div>
+                    <ul>
+                        <li><a href="#영화-현재상영작">현재상영작</a></li>
+                        <li><a href="#영화-상영예정작">상영예정작</a></li>
+                        <li><a href="#영화-ICECON">ICECON</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#극장-CGV극장">CGV극장</a></li>
+                        <li><a href="#극장-특별관">특별관</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#예매-예매하기">예매하기</a></li>
+                        <li><a href="#예매-상영시간표">상영시간표</a></li>
+                        <li><a href="#예매-English Ticketing">English Ticketing</a></li>
+                        <li><a href="#예매-English Schedule">English Schedule</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#스토어-콤보">콤보</a></li>
+                        <li><a href="#스토어-팝콘">팝콘</a></li>
+                        <li><a href="#스토어-음료">음료</a></li>
+                        <li><a href="#스토어-스낵">스낵</a></li>
+                        <li><a href="#스토어-플레이존">플레이존</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#이벤트-special">SPECIAL</a></li>
+                        <li><a href="#이벤트-영화/예매">영화/예매</a></li>
+                        <li><a href="#이벤트-멤버십/club">멤버십/CLUB</a></li>
+                        <li><a href="#이벤트-cgv극장별">CGV극장별</a></li>
+                        <li><a href="#이벤트-제휴할인">제휴할인</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+<!-- 슬라이드 영역 -->
+    <div id="slide_wrap" class="w100">
+        <ul id="cgv_slide">
+            <li><a href="#오펀-천사의 탄생"><img src="images/slide_images1.png" alt="오펀-천사의 탄생 슬라이드 이미지"></a></li>
+            <li><a href="#귀못"><img src="images/slide_images2.png" alt="귀못 슬라이드 이미지"></a></li>
+            <li><a href="#신에반게리온"><img src="images/slide_images3.png" alt="신에반게리온 슬라이드 이미지"></a></li>
+        </ul>
+
+        <button id="pre"><span>pre button</span></button>
+        <button id="next"><span>next button</span></button>
+    </div>
+
+<!-- 영화개봉작 영역 -->
+    <section id="chart_container"class="w100">
+
+        <div id="movie_chart">
+            <div id="title_chart">
+                <ul>
+                    <li class="on">박스오피스</li>
+                    <li>상영예정작</li>
+                </ul>
+            </div>
+
+            <div id="contents_chart" class="chart_wrap">
+                <ul id="chart1" class="main_chart">
+                    <li>
+                        <div id="rank_view1" class="ranking">
+                            <div id="rank_mov1_1" class="movie">
+                                <span>정직한후보2</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p class="main_wr">정직한 후보2</p>
+                        <p class="sub_wr">관람지수:95% / 예매율:11.6%</p>
+                    </li>
+                    <li>
+                        <div id="rank_view2" class="ranking">
+                            <div id="rank_mov1_2" class="movie">
+                                <span>아바타 리마스터링</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p class="main_wr">아바타 리마스터링</p>
+                        <p class="sub_wr">관람지수:99% / 예매율:9.7%</p>
+                    </li>
+                    <li>
+                        <div id="rank_view3" class="ranking">
+                            <div id="rank_mov1_3" class="movie">
+                                <span>인생은 아름다워</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p class="main_wr">인생은 아름다워</p>
+                        <p class="sub_wr">관람지수:95% / 예매율:11.6%</p>
+                    </li>
+                    <li>
+                        <div id="rank_view4" class="ranking">
+                            <div id="rank_mov1_4" class="movie">
+                                <span>늑대사냥</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p class="main_wr">늑대사냥</p>
+                        <p class="sub_wr">관람지수:65% / 예매율:2.8%</p>
+                    </li>
+                    <li>
+                        <div id="rank_view5" class="ranking">
+                            <div id="rank_mov1_5" class="movie">
+                                <span>엔시티드림</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p class="main_wr">앤시티드림 무비All</p>
+                        <p class="sub_wr">기대지수:99% / 예매율:37.3%</p>
+                    </li>
+                    <li>
+                        <div id="rank_view6" class="ranking">
+                            <div id="rank_mov1_6" class="movie">
+                                <span>올빼미</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p class="main_wr">올빼미</p>
+                        <p class="sub_wr">기대지수:99% / 예매율:17.1%</p>
+                    </li>
+                    <li>
+                        <div id="rank_view7" class="ranking">
+                            <div id="rank_mov1_7" class="movie">
+                                <span>블랙팬터</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p class="main_wr">블랙팬서-와칸다포에..</p>
+                        <p class="sub_wr">관람지수:84% / 예매율:8.2%</p>
+                    </li>
+                    <li>
+                        <div id="rank_view8" class="ranking">
+                            <div id="rank_mov1_8" class="movie">
+                                <span>동감</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p class="main_wr">동감</p>
+                        <p class="sub_wr">관람지수:85% / 예매율:6.3%</p>
+                    </li>
+                    <li>
+                        <div id="rank_view9" class="ranking">
+                            <div id="rank_mov1_9" class="movie">
+                                <span>데시벨</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p class="main_wr">데시벨</p>
+                        <p class="sub_wr">관람지수:90% / 예매율:5.0%</p>
+                    </li>
+                    <li>
+                        <div id="rank_view10" class="ranking">
+                            <div id="rank_mov1_10" class="movie">
+                                <span>폴</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p  class="main_wr">폴-600미터</p>
+                        <p class="sub_wr">관람지수:93% / 예매율:1.2%</p>
+                    </li>
+                </ul>
+
+                <button id="pre2" class="pre2"><span>pre button</span></button>
+                <button id="next2" class="next2"><span>next button</span></button>
+            </div>
+
+            <div id="contents_chart2" class="chart_wrap">
+                <ul id="chart2" class="main_chart">
+                    <li>
+                        <div id="rank_view21" class="ranking">
+                            <div id="rank_mov2_1" class="movie">
+                                <span>유포자들</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p class="main_wr">유포자들</p>
+                        <p class="sub_wr">기대지수:99% / 예매율:2.9%</p>
+                    </li>
+                    <li>
+                        <div id="rank_view22" class="ranking">
+                            <div id="rank_mov2_2" class="movie">
+                                <span>기예르모</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p class="main_wr">기예르모 델토로의 피..</p>
+                        <p class="sub_wr">관람지수:99% / 예매율:0.1%</p>
+                    </li>
+                    <li>
+                        <div id="rank_view23" class="ranking">
+                            <div id="rank_mov2_3" class="movie">
+                                <span>올빼미</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p class="main_wr">올빼미</p>
+                        <p class="sub_wr">관람지수:99% / 예매율:17.1%</p>
+                    </li>
+                    <li>
+                        <div id="rank_view24" class="ranking">
+                            <div id="rank_mov2_4" class="movie">
+                                <span>스트레인지</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p class="main_wr">스트레인지월드</p>
+                        <p class="sub_wr">관람지수:99% / 예매율:3.9%</p>
+                    </li>
+                    <li>
+                        <div id="rank_view25" class="ranking">
+                            <div id="rank_mov2_5" class="movie">
+                                <span>아마겟돈</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p class="main_wr">아마겟돈 타임</p>
+                        <p class="sub_wr">기대지수:99% / 예매율:0.1%</p>
+                    </li>
+                    <li>
+                        <div id="rank_view26" class="ranking">
+                            <div id="rank_mov2_6" class="movie">
+                                <span>놈</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p class="main_wr">놈이 우리 안에 있다</p>
+                        <p class="sub_wr">기대지수:99% / 예매율:0.1%</p>
+                    </li>
+                    <li>
+                        <div id="rank_view27" class="ranking">
+                            <div id="rank_mov2_7" class="movie">
+                                <span>존 덴버</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p class="main_wr">존 덴버 죽이기</p>
+                        <p class="sub_wr">관람지수:99% / 예매율:0.0%</p>
+                    </li>
+                    <li>
+                        <div id="rank_view28" class="ranking">
+                            <div id="rank_mov2_8" class="movie">
+                                <span>창밖</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p class="main_wr">창밖은 겨울</p>
+                        <p class="sub_wr">관람지수:99% / 예매율:1.3%</p>
+                    </li>
+                    <li>
+                        <div id="rank_view29" class="ranking">
+                            <div id="rank_mov2_9" class="movie">
+                                <span>세이레</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p class="main_wr">세이레</p>
+                        <p class="sub_wr">관람지수:99% / 예매율:0%</p>
+                    </li>
+                    <li>
+                        <div id="rank_view20" class="ranking">
+                            <div id="rank_mov2_10" class="movie">
+                                <span>유포자들</span>
+                                <div class="reserve">예매하기</div>
+                                <div class="detail">상세정보</div>
+                            </div>
+                        </div>
+                        <p class="main_wr">라라랜드</p>
+                        <p class="sub_wr">관람지수:99% / 예매율:0.1%</p>
+                    </li>
+                </ul>
+
+                <button id="sub_pre2" class="pre2"><span>pre button</span></button>
+                <button id="sub_next2" class="next2"><span>next button</span></button>
+            </div>
+
+        </div>
+    </section>
+
+<!--EVENT section-->
+    <section id="event_container" class="w100">
+        <h1>EVENT</h1>
+        <div id="event_contents">
+            <ul>
+                <li>
+                    <a href="#땡스데이">
+                        <img src="images/event_thanks.png" alt="땡스데이 이미지">
+                    </a>
+                </li>
+                <li>
+                    <p class="nums">01</p>
+                    <p>
+                        할인쿠폰 나눠주고<br>
+                        쿠폰팩도 받아가세요!
+                    </p>
+                </li>
+                <li>
+                    <a href="#인생은 아름다워 필름마크"><img src="images/event_film-beautiful.png" alt="인생은 아름다워 이미지"></a>
+                </li>
+                <li>
+                    <p class="nums">02</p>
+                    <p>
+                        [인생은 아름다워] 필름마크<br>
+                        2022.09.21 ~ 10.16
+                    </p>
+                </li>
+                <li><span>공백</span></li>
+                <li><span>공백</span></li>
+                <li>
+                    <a href="#아바타 필름마크"><img src="images/event_film-avatar.png" alt="아바타 이미지"></a>
+                </li>
+                <li>
+                    <p class="nums">03</p>
+                    <p>
+                        [아바타 리마스터링] 필름마크<br>
+                        2022.09.14 ~ 10.09
+                    </p>
+                </li>
+                <li>
+                    <a href="#사용설명서"><img src="images/event_explain.png" alt="사용설명서 이미지"></a>
+                </li>
+                <li>
+                    <p class="nums">04</p>
+                    <p>
+                        개봉작을 더욱 특별하게<br>
+                        즐길 수 있는 이벤트!
+                    </p>
+                </li>
+                <li>
+                    <p id="num">05</p>
+                    <p>
+                        [늑대사냥] 필름마크<br>
+                        2022.09.14 ~ 10.09
+                    </p>
+                </li>
+                <li>
+                    <a href="#늑대사냥 필름마크"><img src="images/event_film-wolf.png" alt="늑대사냥 이미지"></a>
+                </li>
+                <li>
+                    <a href="#정직한후보2 필름마크"><img src="images/event_film-honesty.png" alt="정직한후보2 이미지"></a>
+                </li>
+                <li>
+                    <p class="nums">06</p>
+                    <p>
+                        [정직한 후보2] 필름마크<br>
+                        2022.09.21 ~ 10.16
+                    </p>
+                </li>
+                <li><span>공백</span></li>
+            </ul>
+        </div>
+    </section>
+
+<!--SPECIAL section-->
+    <section id="special_container" class="w100">
+        <h1>SPECIAL</h1>
+        <div id="special_contents">
+            <ul>
+                <li id="sc_f" class="box_container">
+                    <div id="whole1" class="s_whole">
+                        <div class="s_title">
+                            <a href="#스페셜관 1">
+                                진화된 3S(SCREEN, SOUND, SEAT) 기술로 컨텐츠<br>
+                                몰입도를 극대화하여 영화관람에 최적화된 환경을 제공합니다.
+                            </a>
+                        </div>
+                        <ul id="h_contents1" class="hashtag">
+                            <li><a href="#imax">IMAX</a></li>
+                            <li><a href="#soundx">SOUNDX</a></li>
+                            <li><a href="starium">STARIUM</a></li>
+                            <li><a href="#4dx screen">4DX SCREEN</a></li>
+                            <li><a href="#screenx">SCREENX</a></li>
+                            <li><a href="#4dx">4DX</a></li>
+                            <li><a href="#spherex">SPHEREX</a></li>
+                            <li><a href="#dolby atmos">DOLBY ATMOS</a></li>
+                        </ul>
+                    </div>
+                    <div class="s_footer">TECHNOLOGY</div>
+                </li>
+                <li id="sc_s" class="box_container">
+                    <div id="whole2" class="s_whole">
+                        <div class="s_title">
+                            <a href="#스페셜관2">
+                                세련된 인테리어와 프리미엄 서비스로 진정한 품격을<br>
+                                느낄 수 있는 최고급 영화 관람환경을 선사합니다.
+                            </a>
+                        </div>
+                        <ul id="h_contents2" class="hashtag">
+                            <li><a href="#private box">PRIVATE BOX</a></li>
+                            <li><a href="#suite cinema">SUITE CINEMA</a></li>
+                            <li><a href="#cine de chef">CINE de CHEF</a></li>
+                            <li><a href="#tempur cinema">TEMPUR CINEMA</a></li>
+                            <li><a href="#gold class">GOLD CLASS</a></li>
+                            <li><a href="#the private cinema">THE PRIVATE CINEMA</a></li>
+                            <li><a href="#premium">PREMIUM</a></li>
+                        </ul>
+                    </div>
+                    <div class="s_footer">PRESTIGE</div>
+                </li>
+                <li id="sc_t" class="box_container">
+                    <div id="whole3" class="s_whole">
+                        <div class="s_title">
+                            <a href="#스페셜관3">
+                                유니크한 테마로 구성된 컨셉 상영관으로 특별한 추억을<br>
+                                만들 수 있는 다양한 영화관람 경험을 선물합니다.
+                            </a>
+                            <ul id="h_contents3" class="hashtag">
+                                <li><a href="#cine&foret">CINE &amp; FORET</a></li>
+                                <li><a href="#cine&living room">CINE &amp; LIVING ROOM</a></li>
+                                <li><a href="#cine kids">CINE KIDS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="s_footer">CONCEPT</div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+<!-- 공지사항/특별혜택 -->
+    <section id="notice_container" class="w100">
+        <div id="notice_contents">
+            <div id="noti_wrap1" class="wraps">
+                <h3>공지사항</h3>
+                <div class="box">
+                    <ul class="notice">
+                        <li>[기타]</li>
+                        <li>
+                            <a href="#기타">
+                                <span>
+                                    2022년 09월 13일 CGV의 개인정보처리방침과 위치기반서비스 이용<br>
+                                    약관이 개정됨에 따라 회원님께 주요개정 내용과 적용 일정을 안내해..
+                                </span>
+                            </a>
+                        </li>
+                        <li>2022.09.06</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <ul class="notice">
+                        <li>[시스템점검]</li>
+                        <li>
+                            <a href="#시스템점검">
+                                <span>
+                                    원활하고 안정된 서비스 제공을 위하여 2022년 9월 새벽 시스템 점검<br>
+                                    작업이 있습니다. 점검 시간 중 CGV 홈페이지 및 모바일의 모든 서비스..
+                                </span>
+                            </a>
+                        </li>
+                        <li>2022.09.14</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <ul class="notice">
+                        <li>[극장]</li>
+                        <li>
+                            <a href="#극장">
+                                <span>
+                                    국제하프마라톤 진행으로 CGV대구 스타디움 일반차량 진입이 불가하며<br>
+                                    통제시간내 지하철 및 버스(우회운영) 가능하오니 영화관 방문 고객님들..
+                                </span>
+                            </a>
+                        </li>
+                        <li>2022.09.15</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="noti_wrap2" class="wraps">
+                <h3>특별혜택</h3>
+                <div class="box">
+                    <ul class="special_benefit">
+                        <li>
+                            <p><a href="#id카드">삼성 ID 카드</a></p>
+                            <p><a href="#id카드 본문">영화보고 굿즈받자! 씨네샵 굿즈증정</a></p>
+                            <p><a href="#id카드 날짜">2022.09.01 ~ 2022.09.30</a></p>
+                        </li>
+                        <li><a href="#삼성아이디카드"><img src="images/samsung_card.png" alt="삼성아이디카드 이미지"></a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <ul id="woori_back" class="special_benefit">
+                        <li>
+                            <p><a href="#우리카드">CGV 우리카드 출시</a></p>
+                            <p id="woori"><a href="#우리카드 본문">매월 영화 1매 무료,5천원 할인까지!</a></p>
+                            <p><a href="#우리카드 날짜">2021.12.21 ~ 2022.12.31</a></p>
+                        </li>
+                        <li><a href="#우리카드"><img src="images/woori_card.png" alt="우리카드 이미지"></a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <ul id="mnuri_back" class="special_benefit">
+                        <li>
+                            <p><a href="#농협카드">NH농협카드</a></p>
+                            <p id="mnuri"><a href="#농협카드 본문">문화누리카드로 문화생활 즐기세요!</a></p>
+                            <p><a href="#농협카드 날짜">2021.02.01 ~ 2023.12.31</a></p>
+                        </li>
+                        <li><a href="#농협카드"><img src="images/mnuri_card.png" alt="문화누리카드"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="bottom_ad"><a href="#야나두 광고"><img src="images/you_can_do_it.png" alt="야나두 이미지"></a></div>
+
+<!-- 푸터 -->
+    <footer id="footer" class="w100">
+        <div id="footer_contents">
+            <div id="footer_top">
+                <ul>
+                    <li><a href="#회사소개">회사소개</a></li>
+                    <li><a href="#IR">IR</a></li>
+                    <li><a href="#채용정보">채용정보</a></li>
+                    <li><a href="#문의">광고/제휴/출점문의</a></li>
+                    <li><a href="#약관">이용약관</a></li>
+                    <li><a href="#기준">편성기준</a></li>
+                    <li><a href="#개인방침"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="#법적고지">법적고지</a></li>
+                    <li><a href="#무단수집거부">이메일주소무단수집거부</a></li>
+                    <li><a href="#윤리경영">윤리경영</a></li>
+                    <li><a href="#감사실">사이버감사실</a></li>
+                </ul>
+            </div>
+            <div id="footer_bottom">
+                <div>
+                    <img src="images/footer_logo.png" alt="cgv 회색로고">
+                </div>
+                <div>
+                    <ul>
+                        <li>대표이사&#58;허민회</li>
+                        <li>대표 이메일&#58;cjcgvmaster@cj.net</li>
+                        <li>사업자등록번호&#58;104-81-45690</li>
+                    </ul>
+                    <ul>
+                        <li>주소&#58;서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층 (한강로동) [04377]</li>
+                    </ul>
+                    <ul>
+                        <li>개인정보보호 책임자&#58;심준범</li>
+                        <li>호스팅책임자&#58;CJ올리브네트웍스</li>
+                        <li>통신판매업신고번호&#58;2017 - 서울용산 - 0662</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
